@@ -1,9 +1,19 @@
-dist: xenial
+language: python
+
+cache:
+  directories:
+    - ~/.cache/pip
+
+env:
+  global:
+    - PIP_WHEEL_DIR=$HOME/.cache/pip/wheels
+    - PIP_FIND_LINKS=file://$HOME/.cache/pip/wheels
+
+python:
+  - "3.4"
 
 install:
-  - tmux -V
+  - pip wheel -r requirements.txt
+  - pip install -r requirements.txt
 
-script:
-  - wget -O speedtest-cli https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py
-  - chmod +x speedtest-cli
-  - python speedtest-cli --single
+script: true
