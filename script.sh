@@ -16,7 +16,7 @@ main() {
     # shellcheck disable=SC2016
     #export PATH="$JAVA_HOME/bin:$PATH"
     sudo apt-get -yqq --no-install-suggests --no-install-recommends install "$PACKAGE" || true
-    sudo update-java-alternatives -s /usr/lib/jvm/"$PACKAGE"* --verbose --config java
+    update-java-alternatives -s /usr/lib/jvm/"$PACKAGE"* --verbose
     echo $JAVA_HOME
     java -version
 }
