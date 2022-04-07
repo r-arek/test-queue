@@ -1,5 +1,5 @@
 dist: bionic
-#jdk: oracle17
+jdk: openjdk17
 arch: amd64
 script:
 #  - chmod +x ./script.sh
