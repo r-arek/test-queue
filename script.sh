@@ -12,9 +12,9 @@ main() {
     wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo tee /usr/share/keyrings/adoptium.asc
     echo "deb [signed-by=/usr/share/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
     sudo apt-get update -yqq
-    travis_cmd export JAVA_HOME="/usr/lib/jvm/temurin-17-jdk-amd64"
+    export JAVA_HOME="/usr/lib/jvm/temurin-17-jdk-amd64"
     # shellcheck disable=SC2016
-    travis_cmd export PATH="$JAVA_HOME/bin:$PATH"
+    export PATH="$JAVA_HOME/bin:$PATH"
     sudo apt-get -yqq --no-install-suggests --no-install-recommends install "$PACKAGE" || true
     update-java-alternatives -s /usr/lib/jvm/"$PACKAGE"* --verbose
     echo $JAVA_HOME
