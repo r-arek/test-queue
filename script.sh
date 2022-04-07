@@ -14,7 +14,7 @@ main() {
     sudo apt-get update -yqq
     export JAVA_HOME="/usr/lib/jvm/temurin-17-jdk-amd64"
     # shellcheck disable=SC2016
-    #export PATH="$JAVA_HOME/bin:$PATH"
+    export PATH="$JAVA_HOME/bin:$PATH"
     sudo apt-get -yqq --no-install-suggests --no-install-recommends install "$PACKAGE" || true
     update-java-alternatives -s /usr/lib/jvm/"$PACKAGE"* --verbose
     echo $JAVA_HOME
