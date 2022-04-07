@@ -6,6 +6,8 @@ script:
  - source "$HOME/.sdkman/bin/sdkman-init.sh"
  - sdk install java 17.0.2-tem
  - java -version
+ - whereis java
+ - echo $JAVA_HOME
 notifications:
   email: false
 
