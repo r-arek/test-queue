@@ -8,6 +8,7 @@ script:
  - java -version
  - whereis java
  - echo $JAVA_HOME
+ - echo $PATH
 notifications:
   email: false
 
