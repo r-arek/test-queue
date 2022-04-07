@@ -5,7 +5,7 @@ script:
  - curl -s "https://get.sdkman.io?rcupdate=false" | bash
  - source "$HOME/.sdkman/bin/sdkman-init.sh"
  - sdk install java 17.0.2-tem
-
+ - java -version
 notifications:
   email: false
 
