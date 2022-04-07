@@ -10,8 +10,8 @@ script:
 #  - source ./script.sh
  - java -version
 #  - whereis java
-#  - echo $JAVA_HOME
-#  - echo $PATH
+  - echo $JAVA_HOME
+  - echo $PATH
 notifications:
   email: false
   
