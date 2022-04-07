@@ -2,16 +2,16 @@ dist: bionic
 #jdk: oracle17
 arch: amd64
 script:
- - chmod +x ./script.sh
- - sudo ./script.sh
+#  - chmod +x ./script.sh
+#  - sudo ./script.sh
 #  - curl -s "https://get.sdkman.io?rcupdate=false" | bash
 #  - source "$HOME/.sdkman/bin/sdkman-init.sh"
 #  - sdk install java 17.0.2-tem
- - source ./script.sh
+#  - source ./script.sh
  - java -version
- - whereis java
- - echo $JAVA_HOME
- - echo $PATH
+#  - whereis java
+#  - echo $JAVA_HOME
+#  - echo $PATH
 notifications:
   email: false
   
