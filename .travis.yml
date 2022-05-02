@@ -1,6 +1,4 @@
-dist: rhel8
+arch: s390x
 script:
- - ls /proc/1/cgroup
- - cat /etc/redhat-release 
- - cat /etc/os-release
+ - ls /
 
