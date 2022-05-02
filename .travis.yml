@@ -1,4 +1,6 @@
 dist: rhel8
 script:
- - echo "test"  
+ - ls /proc/1/cgroup
+ - cat /etc/redhat-release 
+ - cat /etc/os-release
 
