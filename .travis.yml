@@ -1,4 +1,4 @@
-arch: s390x
+arch: arm64
 script:
  - ls /
 
