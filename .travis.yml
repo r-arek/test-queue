@@ -1,5 +1,5 @@
 arch: amd64
 os: rhel8
 script:
- - ls /
+ - cat /proc/1/cgroup
 
