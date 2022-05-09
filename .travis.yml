@@ -1,4 +1,3 @@
-arch: amd64
-os: rhel8
+os: linux
 script:
  - cat /proc/1/cgroup
