@@ -1,4 +1,5 @@
-arch: arm64
+arch: amd64
+os: rhel8
 script:
  - ls /
 
