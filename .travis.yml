@@ -1,4 +1,4 @@
-os: linux
+os: rhel8
 script:
  - cat /proc/1/cgroup
  - cat /etc/os-release
