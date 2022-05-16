@@ -1,4 +1,4 @@
-os: rhel8
+dist: jammy
 script:
  - cat /proc/1/cgroup
  - cat /etc/os-release
