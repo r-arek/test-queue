@@ -9,7 +9,7 @@ addons:
     access_key_id: "$ACCESSKEYID"
     secret_access_key: "$AWS_SECRET_KEY"
     region: ap-northeast-1
-    bucket: elasticbeanstalk-ap-northeast-1-529673077012
+    bucket: elasticbeanstalk-ap-northeast-1-341288657826
     app: travis-test
-    env: travis-test
+    env: Travistest-env
     zip_file: 1InitialDeploymentPackage.zip 
