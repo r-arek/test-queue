@@ -12,8 +12,7 @@ install:
   - echo 2
 before_script:
   - composer self-update
-  - composer install
-  - export ELASTIC_BEANSTALK_LABEL=travis-voya-${TRAVIS_BRANCH}-$(git rev-parse --verify
+  - export ELASTIC_BEANSTALK_LABEL=travis-test-${TRAVIS_BRANCH}-$(git rev-parse --verify
     HEAD --short)-$(date +%s)
 addons:
   deploy:
