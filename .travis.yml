@@ -1,27 +1,4 @@
 os: linux
-php: '7.4'
-language: php
-dist: xenial
-services:
-  - redis
-  - mysql
+arch: ppc64le
 script:
-  - echo 1
-  - wget https://github.com/mwittenbols/How-to-deploy-a-static-website-to-Elastic-BeanStalk-for-the-Enterprise/blob/master/1InitialDeploymentPackage.zip
-install:
-  - echo 2
-before_script:
-  - composer self-update
-  - export ELASTIC_BEANSTALK_LABEL=travis-test-${TRAVIS_BRANCH}-$(git rev-parse --verify
-    HEAD --short)-$(date +%s)
-addons:
-  deploy:
-  - provider: elasticbeanstalk
-    skip_cleanup: true
-    access_key_id: "$ACCESSKEYID"
-    secret_access_key: "$AWS_SECRET_KEY"
-    region: ap-northeast-1
-    bucket: elasticbeanstalk-ap-northeast-1-341288657826
-    app: travis-test
-    env: Travistest-env
-    zip_file: 1InitialDeploymentPackage.zip 
+  - echo "test"
