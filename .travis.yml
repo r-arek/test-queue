@@ -2,5 +2,6 @@ os: linux
 dist: trusty
 sudo: required
 group: edge
+language: java
 script:
   - echo "test"
