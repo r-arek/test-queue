@@ -1,4 +1,6 @@
 os: linux
-arch: ppc64le
+dist: trusty
+sudo: required
+group: edge
 script:
   - echo "test"
