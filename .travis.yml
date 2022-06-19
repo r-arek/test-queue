@@ -4,3 +4,4 @@ php:
   - "8.1"
 script:
   - php --version
+  - cat /home/travis/.pearrc
