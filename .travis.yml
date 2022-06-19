@@ -1,27 +1,5 @@
-dist: focal
+dist: jammy
 group: dev
 language: php
-php:
-  - "7.2"
 script:
-  - echo '<?php error_reporting(0); echo serialize(
-                [
-                  'preferred_state' => "stable",
-                  'temp_dir'     => "/tmp/pear/install",
-                  'download_dir' => "/tmp/pear/install",
-                  'bin_dir'      => "/home/travis/.phpenv/versions/8.1/bin",
-                  'php_dir'      => "/home/travis/.phpenv/versions/8.1/share/pear",
-                  'doc_dir'      => "/home/travis/.phpenv/versions/8.1/docs",
-                  'data_dir'     => "/home/travis/.phpenv/versions/8.1/data",
-                  'cfg_dir'      => "/home/travis/.phpenv/versions/8.1/cfg",
-                  'www_dir'      => "/home/travis/.phpenv/versions/8.1/www",
-                  'man_dir'      => "/home/travis/.phpenv/versions/8.1/man",
-                  'test_dir'     => "/home/travis/.phpenv/versions/8.1/tests",
-                  '__channels'   => [
-                    '__uri' => [],
-                    'doc.php.net' => [],
-                    'pecl.php.net' => []
-                  ],
-                  'auto_discover' => 1
-                ]
-              ) ?>' | php > ${TRAVIS_HOME}/.pearrc"
+  - php --version
