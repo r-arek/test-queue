@@ -1,8 +1,6 @@
-os: linux
-dist: trusty
-sudo: required
-group: edge
+dist: jammy
+group: dev
+php:
+  - "8.1"
 script:
-  - echo "a"
-install: skip
-language: java
+  - php --version
