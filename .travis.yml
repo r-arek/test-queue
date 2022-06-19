@@ -1,5 +1,5 @@
 dist: jammy
-arch: arm64
+arch: s390x
 group: dev
 script:
   - echo "test"
