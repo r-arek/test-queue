@@ -23,5 +23,4 @@ script:
                   ],
                   'auto_discover' => 1
                 ]
-              ) ?>' | php > ${TRAVIS_HOME}/.pearrc"
-  - echo $?
+              ) ?>' | php > ${TRAVIS_HOME}/.pearrc"; echo $?
