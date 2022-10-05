@@ -8,3 +8,4 @@ install:
 script:
   - python --version
   - python3 --version
+  - node -v
