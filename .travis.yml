@@ -1,2 +1,10 @@
+os: linux
+language:
+  - python: '3.8'
+  - node_js: 14.0.20
+dist: bionic
+install:
+  - skip
 script:
-  - date
+  - python --version
+  - python3 --version
