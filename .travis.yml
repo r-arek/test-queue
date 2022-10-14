@@ -2,15 +2,15 @@ os: linux
 arch: ppc64le
 jobs:
   include:
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
-    - script: date
+    - script: echo "a"
+    - script: echo "b"
+    - script: echo "c"
+    - script: echo "d"
+    - script: echo "e"
+    - script: echo "f"
+    - script: echo "g"
+    - script: echo "h"
+    - script: echo "i"
+    - script: echo "j"
       
       
