@@ -1,5 +1,5 @@
 os: linux
-arch: ppc64le
+arch: s390x
 jobs:
   include:
     - script: echo "a"
