@@ -2,16 +2,15 @@ os: linux
 arch: ppc64le
 jobs:
   include:
-    - stage: test
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
-      script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
+    - script: date
       
       
