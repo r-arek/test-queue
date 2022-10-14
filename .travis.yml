@@ -1,11 +1,17 @@
 os: linux
-language: python
-python: '3.8'
-node_js: '14.0.20'
-dist: bionic
-install:
-  - skip
-script:
-  - python --version
-  - python3 --version
-  - node -v
+arch: ppc64le
+jobs:
+  include:
+    - stage: test
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      script: date
+      
+      
