@@ -1,16 +1,2 @@
 os: linux
-arch: s390x
-jobs:
-  include:
-    - script: echo "a"
-    - script: echo "b"
-    - script: echo "c"
-    - script: echo "d"
-    - script: echo "e"
-    - script: echo "f"
-    - script: echo "g"
-    - script: echo "h"
-    - script: echo "i"
-    - script: echo "j"
-      
-      
+script: date
