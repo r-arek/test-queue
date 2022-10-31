@@ -1,2 +1,2 @@
-os: linux
+arch: s390x
 script: date
