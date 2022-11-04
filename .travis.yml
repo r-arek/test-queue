@@ -1,2 +1,2 @@
-arch: s390x
-script: date
+dist: jammy
+script: openssl version
