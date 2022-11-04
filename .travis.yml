@@ -1,2 +1,4 @@
 dist: jammy
-script: openssl version
+script: 
+  - openssl version
+  - cat /etc/lsb-release
