@@ -1,6 +1,6 @@
 os: linux
 arch: s390x
 script: 
-  - truncate -s 16G test.txt
+  - fallocate -l $((15*1024*1024*1024)) test.txt
   - du -h test.txt
   - date
