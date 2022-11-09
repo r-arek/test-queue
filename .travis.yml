@@ -1,6 +1,6 @@
 os: linux
 arch: s390x
 script: 
-  - fallocate -l $((15*1024*1024*1024)) test.txt
+  - dd if=/dev/urandom of=test.txt bs=15GB count=1
   - du -h test.txt
   - date
