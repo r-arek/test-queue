@@ -1,6 +1,8 @@
-os: linux
-arch: ppc64le
-script: 
-  - head -c 15G /dev/urandom > test.txt
-  - du -h test.txt
-  - date
+dist: focal
+arch: arm64-graviton2
+virt: lxd
+group: edge
+
+script:
+  - uname -a
+  - curl -4 https://icanhazip.com/
