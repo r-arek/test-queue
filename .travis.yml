@@ -1,8 +1,11 @@
 dist: focal
-arch: arm64-graviton2
-virt: lxd
-group: edge
 
-script:
-  - uname -a
-  - curl -4 https://icanhazip.com/
+arch: 
+  - amd64
+  - ppc64le
+  
+os: linux
+
+language: clojure
+
+script: lein version
