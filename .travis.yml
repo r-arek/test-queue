@@ -1,11 +1,11 @@
-dist: bionic
-
-arch: 
-  - ppc64le
-  - s390x
-  
 os: linux
+arch: arm64-graviton2
+virt: vm
+group: edge
+language: node_js
+sudo: required
+node_js:
+- 16
 
-language: clojure
-
-before_install: ls -la /usr/local/bin | grep lein
+install: skip
+script: skip
