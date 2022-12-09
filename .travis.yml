@@ -1,3 +1,3 @@
 os: linux
-jdk: openj9-11
-script: date
+jdk: eclipse-11
+script: ls -la /usr/lib/jvm
