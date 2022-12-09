@@ -7,4 +7,4 @@ jdk:
   - openjdk10
   - openjdk11
   - eclipse11
-script: ls -la /usr/lib/jvm
+script: java -version
