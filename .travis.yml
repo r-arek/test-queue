@@ -1,4 +1,5 @@
 os: linux
+dist: focal
 jdk:
   - oraclejdk8
   - oraclejdk11
