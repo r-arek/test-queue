@@ -1,2 +1,3 @@
 os: linux
+jdk: openj9-11
 script: date
