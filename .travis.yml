@@ -2,3 +2,4 @@ language: java
 jdk: eclipse-11
 script:
   - java -version
+  - ls -la /usr/lib/jvm
