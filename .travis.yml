@@ -1,9 +1,4 @@
-dist: focal
-os: linux
-arch: arm64-graviton2
-virt: lxd
-group: edge
-language: node_js
-
-install: skip
-script: true
+language: java
+jdk: eclipse-11
+script:
+  - java -version
