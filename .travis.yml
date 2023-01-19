@@ -1,13 +1,13 @@
 language: go
 os:
-- linux
+  - linux
 dist: xenial
 sudo: true
 arch:
-- arm64
+  - arm64
 go:
-- '1.18'
+  - '1.18'
 services:
-- docker
+  - docker
 script:
-- date
+  - date
