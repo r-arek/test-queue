@@ -2,7 +2,7 @@ language: go
 os: linux
 group: edge
 
-dist: focal # default (xenial) does not work
+dist: bionic
 arch: pc64le
 
 go:
@@ -10,6 +10,8 @@ go:
 
 script:
 - ruby -v
+- go version
+
 
 deploy:
   provider: releases
