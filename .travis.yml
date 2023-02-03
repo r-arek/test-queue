@@ -11,3 +11,10 @@ go:
 script:
 - ruby -v
 
+deploy:
+  provider: releases
+  api_key: "asdasdasdas"
+  file: /tmp/archive.zip
+  skip_cleanup: true
+  on:
+    tags: true
