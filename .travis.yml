@@ -1,6 +1,5 @@
 language: go
 os: linux
-group: edge
 
 dist: bionic
 arch: pc64le
