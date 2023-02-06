@@ -15,10 +15,6 @@ before_install:
   -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 - sudo chmod +x /usr/local/bin/docker-compose
 - sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
-addons:
-  apt:
-    packages:
-    - sshpass
 install: skip
 script:
   - docker --version
