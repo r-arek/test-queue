@@ -1,6 +1,4 @@
-language: shell
 os: linux
-dist: xenial
 script:
   - apt-get update && apt-get install -y sshpass curl speedtest-cli
   - speedtest-cli
