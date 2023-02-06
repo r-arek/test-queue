@@ -1,6 +1,8 @@
 language: shell
 os: linux
 dist: xenial
+services:
+- docker
 before_install:
 - sudo apt-get remove docker docker-engine docker.io containerd runc
 - curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
