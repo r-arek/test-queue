@@ -1,21 +1,4 @@
-language: go
 os: linux
 
-dist: bionic
-arch: pc64le
-
-go:
-- 1.18
-
 script:
-- ruby -v
-- go version
-
-
-deploy:
-  provider: releases
-  api_key: "asdasdasdas"
-  file: /tmp/archive.zip
-  skip_cleanup: true
-  on:
-    tags: true
+  - date
