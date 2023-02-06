@@ -4,6 +4,5 @@ dist: xenial
 services:
 - docker
 install: skip
-before_script: []
 script:
   - docker --version
