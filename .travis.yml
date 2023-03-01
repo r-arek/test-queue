@@ -1,4 +1,4 @@
 dist: docal
 script:
   - sudo modprobe kvm_amd
-  - sudo dmesg
+  - sudo dmesg | grep kvm
