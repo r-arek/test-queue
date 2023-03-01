@@ -1,3 +1,4 @@
-arch: s390x
+dist: docal
 script:
-  - date
+  - sudo modprobe kvm_amd
+  - sudo dmesg
