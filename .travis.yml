@@ -2,4 +2,4 @@ os: linux
 language: python
 
 script:
-  - pip install -i http://pip.cache.staging.travis-ci.com/root/pypi/+simple/ tensorflow
+  - pip install -i --trusted-host http://pip.cache.staging.travis-ci.com/root/pypi/+simple/ tensorflow
