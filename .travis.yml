@@ -1,5 +1,5 @@
 os: linux
+language: python
 
 script:
-  - sudo apt update && sudo apt -y install dnsutils
-  - dig test.cache.staging.travis-ci.com
+  - pip install -i http://pip.cache.staging.travis-ci.com/root/pypi/+simple/ tensorflow
