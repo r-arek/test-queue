@@ -1,19 +1,5 @@
 os: linux
 
-before_script:
-  - docker pull ubuntu:latest
-  - docker pull node:latest
-
 script:
-  - echo "cpu count using nproc in docker"
-  - docker run  -t ubuntu:latest bash -c 'nproc'
-  - echo "cpu count using nodejs in docker"
-  - docker run --rm -t node:latest node -e "console.log(require('os').cpus().length)"
-  - echo "MOUNT cpu count using nproc in docker"
-  - docker run  -t -v /proc/cpuinfo:/proc/cpuinfo:rw -v /proc/meminfo:/proc/meminfo:rw -v /proc/stat:/proc/stat:rw ubuntu:latest bash -c 'nproc'
-  - echo "MOUNT cpu count using nodejs in docker"
-  - docker run --rm -t -v /proc/cpuinfo:/proc/cpuinfo:rw -v /proc/meminfo:/proc/meminfo:rw -v /proc/stat:/proc/stat:rw node:latest node -e "console.log(require('os').cpus().length)"
-
-jobs:
-  include:
-    - arch: ppc64le
+  - apt update && apt -y install dnsutils
+  - dig test.cache.staging.travis-ci.com
