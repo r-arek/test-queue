@@ -1,5 +1,5 @@
 os: linux
 
 script:
-  - apt update && apt -y install dnsutils
+  - sudo apt update && sudo apt -y install dnsutils
   - dig test.cache.staging.travis-ci.com
