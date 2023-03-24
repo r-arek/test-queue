@@ -3,4 +3,4 @@ language: python
 
 
 script:
-  - date
+  - cat ~/.ssh/config
