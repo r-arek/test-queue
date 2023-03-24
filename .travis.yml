@@ -1,6 +1,4 @@
 os: linux
-language: python
-
 
 script:
-  - cat ~/.ssh/config
+  - cat ~/.ssh/known_hosts
