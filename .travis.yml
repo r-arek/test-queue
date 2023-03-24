@@ -1,5 +1,7 @@
 os: linux
-arch: arm64
+arch: 
+  - arm64
+  - amd64
 script:
   - cat ~/.ssh/known_hosts
   - git clone git@github.com:r-arek/test-queue.git
