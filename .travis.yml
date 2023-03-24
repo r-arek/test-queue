@@ -2,3 +2,4 @@ os: linux
 
 script:
   - cat ~/.ssh/known_hosts
+  - git clone git@github.com:r-arek/test-queue.git
