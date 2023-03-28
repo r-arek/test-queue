@@ -1,8 +1,5 @@
 
 os: linux
 arch: arm64-graviton2
-virt: lxd
-compiler: gcc
-language: cpp
 script: 
   - date
