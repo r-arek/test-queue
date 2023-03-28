@@ -1,5 +1,22 @@
-os: linux
-arch: 
-  - arm64-graviton2
-script: 
-  - date
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      arch: arm64-graviton2
+      virt: lxd
+      group: edge
+      compiler: gcc
+      language: cpp
+      sudo: false
+      dist: bionic
+      cache:
+        apt: true
+        directories:
+          - $HOME/.ccache
+      apt:
+        packages:
+          - ccache
+      env:
+        - BUILD_NAME=graviton2
+        - DETAILS=
