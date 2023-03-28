@@ -7,4 +7,4 @@ language: cpp
 sudo: false
 dist: bionic
 script: 
-  - datevim /
+  - date
