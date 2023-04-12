@@ -1,3 +1,5 @@
 os: linux
+arch: 
+  - ppc64le
 script: 
-  - echo "asd"
+  - date
