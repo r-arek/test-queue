@@ -1,5 +1,4 @@
 arch: arm64-graviton2
-dist: focal
 virt: lxd
 script:
     - date 
