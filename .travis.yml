@@ -1,6 +1,4 @@
 arch: arm64-graviton2
-virt:
-    - vm
-    - lxd
+virt: lxd
 script:
     - date 
