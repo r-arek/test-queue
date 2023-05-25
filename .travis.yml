@@ -6,7 +6,7 @@ vault:
     secure: "howTgh3nNkQSPfhW1gl1JC01JODGeUnWmYIz6U9+aI7XKVau1MB3N4zAsNwMLkB0H6x2oSwhfmyleaVMf0NGukowwGrnH19twhli9RkkHqExa/ttKQKmwM7PtmBmruJB9k96fvLhHiRer6AL0xIuP3X/XTnCTGAjVFxbThgrY5njwOzb32P+6IWF7VO5Poyqz8KZPZfhzHhPLT9+riG7hjqdVfIRQbRVRgE9bwRewRLzzBqE8jTcBVbuYIdqkWBXU1NdBUYYwabLMis9yWzwhvB8LYKDagYUkvIxIlhK01/dvZBHffvigmONdFjMqgrZd/iQeayY8IVOqncufbmHQgUqNqHa0cDlFiFY6S6s6IYlDKB0HM1C0J7EuS7ShONddBkboeyJYd9nUo4xbrBLYNGs2FqOksoa6xSRlphVqt8a7tMklPipXGT26o+6+wmn6hg7Mt6IRRHjepKqUv9h3MmpwOpAunhWj/g15Gw8Li9JPLAVe27hH/voRDUngkzFlepHJLgZmbsPIiBn/wWGgFJZ08/duWmV/SPJbj6ueYGMk5ojmoXsrotOOdv+P/iqp4XYAPsTJhhBWG8XN2YTgmCR5Qg3PKVLkwNksnNkvEE1z3DaErij/u2DZNWowDIm8ygBfsTdvvZJd5eIsYFoIqf2RkBY+PXo2l84d7QOIpE="
   api_url: https://vault-east.staging.travis-ci.org 
   secrets:
-    - ibmhashicorp/foo
+    - secret/ibmhashicorp/foo
 
 script:
    - date
