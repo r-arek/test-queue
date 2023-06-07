@@ -1,4 +1,3 @@
 os: linux
 dist: jammy
-script: date
-
+script: echo "tesT"
