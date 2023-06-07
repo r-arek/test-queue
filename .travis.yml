@@ -1,7 +1,5 @@
 os: linux
-dist: focal
-language: shell
-
-script:
-   - curl https://vault-east.staging.travis-ci.org/v1
-   - curl https://vault-east.staging.travis-ci.org
+node_js: '18'
+language: node_js
+dist: jammy
+script: date
