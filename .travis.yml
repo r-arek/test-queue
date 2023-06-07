@@ -1,5 +1,3 @@
 os: linux
-node_js: '18'
-language: node_js
-dist: focal
+dist: jammy
 script: date
