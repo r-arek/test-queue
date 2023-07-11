@@ -1,5 +1,6 @@
 os: linux
-arch: ppc64le
+arch: arm64-graviton2
+virt: lxd
 script: 
   - ls -l /proc/$$/fd/2
   - ls -l /proc/$$/fd/1
