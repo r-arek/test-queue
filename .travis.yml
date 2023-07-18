@@ -1,6 +1,8 @@
-os: linux
-group: edge
-arch: arm64-graviton2
-virt: lxd
-script: 
-  - date
+dist: focal
+vm:
+  size: 'gpu-medium'
+arch: 'amd64'
+script:
+  - df -h
+  - lspci
+  - echo "It is done"
