@@ -1,4 +1,4 @@
 dist: focal
 language: python
 script:
-  - time pip tensorflow==2.6.0
+  - time pip install tensorflow==2.6.0
