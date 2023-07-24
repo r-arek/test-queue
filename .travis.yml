@@ -1,4 +1,4 @@
 dist: focal
 language: python
 script:
-  - time pip install --trusted-host pip.cache.travis-ci.com -i http://pip.cache.travis-ci.com/root/pypi/+simple/ tensorflow==2.6.0
+  - time pip tensorflow==2.6.0
