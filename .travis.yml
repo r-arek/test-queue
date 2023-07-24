@@ -1,8 +1,4 @@
 dist: focal
-vm:
-  size: 'gpu-medium'
-arch: 'amd64'
+language: python
 script:
-  - df -h
-  - lspci
-  - echo "It is done"
+  - time pip install --trusted-host pip.cache.travis-ci.com -i http://pip.cache.travis-ci.com/root/pypi/+simple/ tensorflow==2.6.0
