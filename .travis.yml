@@ -4,8 +4,9 @@ vm:
   size: 'gpu-medium'
 script:
   - nvidia-smi
+  - ls -la /usr/local
   - sudo apt-get update
   - sudo apt-get install -y nvidia-cuda-toolkit
   - cat /proc/driver/nvidia/version
   - nvcc --version
-  - cd /usr/local/cuda-11.0/samples/1_Utilities/deviceQuery && sudo make && ./deviceQuery
+  - cd /usr/local/cuda-12.0/samples/1_Utilities/deviceQuery && sudo make && ./deviceQuery
