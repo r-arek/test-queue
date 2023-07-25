@@ -1,19 +1,12 @@
 dist: focal
 group: dev
 language: python
-jobs:
-  include:
-    - stage: "Instal addons on linux"
-      name: "addons on focal distribution gpu xlarge"
-      dist: focal
-      vm:
-        size: 'gpu-xlarge'
-      language: python
-      arch: 'amd64'
-      python:
-        - "3.9"
-      addons:
-        tensorflow: 2.6.2
-        blender: 3.4.1
-      script:
-        - date
+vm:
+  size: 'gpu-xlarge'
+python:
+  - "3.9"
+addons:
+  tensorflow: 2.6.2
+script:
+  - date
+
