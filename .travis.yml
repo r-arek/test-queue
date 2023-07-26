@@ -1,5 +1,4 @@
 dist: focal
-group: dev
 language: python
 vm:
   size: 'gpu-xlarge'
