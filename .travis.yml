@@ -1,20 +1,4 @@
-os: linux
-
-group: edge
-
-before_script:
-  - docker pull ubuntu:latest
-  - docker pull node:latest
+dist: focal
 
 script:
-  - echo "cpu count using nproc in lxd"
-  - nproc
-  - echo "cpu count using nproc in docker"
-  - docker run  -t ubuntu:latest bash -c 'nproc'
-  - echo "cpu count using nodejs in docker"
-  - docker run --rm -t node:latest node -e "console.log(require('os').cpus().length)"
-  
-jobs:
-  include:
-    - arch: ppc64le
-    - arch: amd64
+ - date
