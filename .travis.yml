@@ -1,4 +1,4 @@
 dist: bionic
 
 script:
- - snapcraft --version
+ - snap --version
