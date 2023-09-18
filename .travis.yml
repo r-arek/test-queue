@@ -1,4 +1,4 @@
 dist: focal
 
 script:
- - date
+ - snapcraft --version
