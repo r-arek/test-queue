@@ -1,4 +1,2 @@
-dist: bionic
-
-script:
- - snap --version
+os: osx
+script: date
