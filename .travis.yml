@@ -1,2 +1,2 @@
-os: osx
+arch: ppc64le
 script: date
