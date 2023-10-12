@@ -1,4 +1,4 @@
 arch: arm64-graviton2
-virt: vm
+virt: lxd
 group: edge
 script: date
