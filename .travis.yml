@@ -1,1 +1,1 @@
-script: df -h
+script: date
