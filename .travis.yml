@@ -1,3 +1,1 @@
-os:
-- osx
 script: df -h
