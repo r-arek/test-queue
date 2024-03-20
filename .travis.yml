@@ -1,2 +1,2 @@
 dist: focal
-script: netstat -tulpn
+script: sudo netstat -tulpn
