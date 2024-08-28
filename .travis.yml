@@ -1,2 +1,2 @@
-dist: focal
+osx: default
 script: sudo netstat -tulpn
