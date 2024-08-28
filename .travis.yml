@@ -1,2 +1,2 @@
-osx: default
+os: osx
 script: sudo netstat -tulpn
