@@ -1,2 +1,2 @@
-os: osx
+arch: s390x
 script: sudo netstat -tulpn
