@@ -1,1 +1,1 @@
-script: date
+script: echo "a"
