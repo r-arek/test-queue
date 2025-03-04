@@ -1,1 +1,1 @@
-script: uname -a
+script: date
